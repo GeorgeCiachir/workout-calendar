@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>workout-calendar</artifactId>
+        <groupId>com.georgeciachir</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>integration-tests</artifactId>
+
+    <properties>
+        <wiremock.version>2.30.1</wiremock.version>
+    </properties>
+
+
+    <dependencies>
+        <!-- Internal -->
+        <dependency>
+            <groupId>com.georgeciachir</groupId>
+            <artifactId>domain</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.georgeciachir</groupId>
+            <artifactId>domain-test-fixtures</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.georgeciachir</groupId>
+            <artifactId>service</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.georgeciachir</groupId>
+            <artifactId>api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.georgeciachir</groupId>
+            <artifactId>api-test-fixtures</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.georgeciachir</groupId>
+            <artifactId>infrastructure</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.georgeciachir</groupId>
+            <artifactId>persistence</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.georgeciachir</groupId>
+            <artifactId>weather</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.georgeciachir</groupId>
+            <artifactId>weather-test-fixtures</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.tomakehurst</groupId>
+            <artifactId>wiremock-jre8</artifactId>
+            <version>${wiremock.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>
